@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         && !empty($_POST['message'])
         echo "empty form.";
     ){
-        $recaptcha_secret = "6LcMbGYrAAAAAP7FgDUA2Af8BAbnMCBZIjV0wSJc";
+        $recaptcha_secret = "Put your code from google here";
         $recaptcha_response = $_POST["g-recaptcha-response"];
 
         $url = "https://www.google.com/recaptcha/api/siteverify?secret=$recaptcha_secret&response=$recaptcha_response";
