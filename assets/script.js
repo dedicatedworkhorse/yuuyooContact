@@ -1,23 +1,3 @@
-function showPopupForm() {
-  document.getElementById("popup-form-container").style.display = "block";
-}
-
-function hidePopupForm() {
-  document.getElementById("popup-form-container").style.display = "none";
-}
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById('show-popup').addEventListener('click', () => {
-    showPopupForm();
-  });
-
-  document.addEventListener('keydown', (event) => {     //escape key
-    if (event.key === 'Escape') hidePopupForm()
-  });
-
-});
-
 //Form Validation
 document.getElementById("contact-form").addEventListener("submit", (event) => {
   const contactForm = event.target
