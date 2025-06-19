@@ -20,12 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Your email sending code here
             $name = $_POST["name"];
             $email = $_POST["email"];
-            $phone = $_POST["phone"];
             $message = $_POST["message"];
 
             $to = "info@yuuyooconsulting.com";
             $subject = "Contact Form Submission";
-            $body = "Name: {$name}\nEmail: {$email}\nPhone: {$phone}\nMessage: {$message}";
+            $body = "Name: {$name}\nEmail: {$email}\nMessage: {$message}";
             $headers = "From: {$email}";
 
             if (mail($to, $subject, $body, $headers)) {
