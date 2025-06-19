@@ -9,6 +9,7 @@ Here's how to add it:
 Create a reCaptcha account at Google reCaptcha and follow the instructions to create a new site.
 Add the Google-provided reCaptcha script to the contact.html file, and include the g-recaptcha div within your form.
 
+```
 <head>
   <!-- Add the following line within your head tag -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -35,4 +36,4 @@ Add the Google-provided reCaptcha script to the contact.html file, and include t
     // Your email sending code here
   }
 ?>
-
+```
